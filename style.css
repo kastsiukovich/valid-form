@@ -1,0 +1,61 @@
+body {
+   font-family: "Arial Narrow", Arial, sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+}
+.main {
+   border: solid 1px green;
+   padding: 10px 10px;
+   border-radius: 5px;
+}
+.input-first {
+   min-width: 200px;
+}
+.develop {
+   min-width: 150px;
+   display: inline-block;
+}
+form div span {
+   color: red;
+}
+
+.input-five {
+   min-width: 100px;
+}
+.but {
+   margin-top: 15px;
+}
+.coment {
+   display: flex;
+   flex-direction: column;
+}
+#content {
+   max-width: 500px;
+}
+#one-input,
+#one-input2,
+#two-input,
+/* .newSpan, */
+#three-input,
+#four-input,
+#five-input,
+#six-input,
+#six-input2,
+#seven-input,
+#eight-input,
+#nine-input {
+   display: none;
+   font-size: 10px;
+}
+.invalid {
+   border-color: red;
+}
+.error {
+   color: red;
+}
+.none {
+   display: none;
+}
+.block {
+   display: block;
+}

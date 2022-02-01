@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>VALID_FORM</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <main class="main">
+      <div class="title">
+         <h1>Для внесения вашего сайта в каталог, заполните анкету</h1>
+      </div>
+      <form class="contont" name="anketa" action="https://fe.it-academy.by/TestForm.php" method="post">
+         <div class="one-input">
+            <!-- required -->
+            <label for="first-name" class="develop name-development">Разработчики:</label>
+            <input placeholder="Введите название разработчика" id="first-name" type="text" class="input-first"
+               autofocus>
+            <span id="one-input">Error! Вы не указали важные данные! </span>
+            <span id="one-input2">Название должно иметь не менее 6 символов</span>
+         </div>
+         <div class="two-input">
+            <label for="two-name" class="develop name-websit">Название сайта:</label>
+            <input placeholder="Введите название сайта" id="two-name" type="text" class="input-two">
+            <span id="two-input">Error! Название cсайта должно иметь не менее 5 символов</span>
+         </div>
+         <div class="three-input">
+            <label for="three-name" class="develop name-url">URL сайта:</label>
+            <input placeholder="Введите URL сайта" id="three-name" type="url" class="input-three">
+            <span id="three-input">Error! Название URL должно содержать http:// или https://!</span>
+         </div>
+         <div class="four-input">
+            <label for="four-name" class="develop name-date">Дата запуска сайта:</label>
+            <input id="four-name" type="date" class="input-four">
+            <span id="four-input">Error! Вы не указали важные данные!</span>
+         </div>
+         <div class="five-input">
+            <label for="five-name" class="develop namber-singers">Посетителей в сутки:</label>
+            <input placeholder="Кол-во посетителей" id="five-name" type="number" class="input-five" min="1">
+            <span id="five-input">Error! Колличество посетителей должно быть боьше 100!</span>
+         </div>
+         <div class="six-input">
+            <label for="six-name" class="develop namber-six">E-mail для связи:</label>
+            <input placeholder="Введите e-mail" id="six-name" type="email" class="input-six">
+            <span id="six-input">Error! E-mail должен содержать @!</span>
+            <span id="six-input2">Название должно иметь не менее 6 символов</span>
+         </div>
+         <div class="seven-input">
+            <label for="seven-name" class="develop catalog">Рубрика каталога:</label>
+            <select id="seven-name" type="" class="input-seven" size="1">
+               <option value="0">Выберите категорию</option>
+               <option value="1">Бытовая техника</option>
+               <option value="2">Спортивный инвентарь</option>
+               <option value="3">Компьютеры и комплектующие</option>
+            </select>
+            <span id="seven-input">Error! Вы не указали важные данные!</span>
+         </div>
+         <div class="eight-input ">
+            <label for="eight-name-1 eight-name-2 eight-name-3" class="develop radio">Размещение:</label>
+            <input id="eight-name-1" type="radio" class="input-eight" name="radio" value="1">бесплатное
+            <input id="eight-name-2" type="radio" class="input-eight" name="radio" value="2">платное
+            <input id="eight-name-3" type="radio" class="input-eight" name="radio" value="3">VIP
+            <input type="hidden" name="choice" value="111">
+            <span id="eight-input">Error! Вы не указали важные данные!</span>
+         </div>
+         <div class="nine-input">
+            <label for="nine-name" class="develop">Разрешить отзывы:</label>
+            <input type="checkbox" name="yes" value="yes" id="nine-name">
+         </div>
+         <div class="coment">
+            <label class="" for="content">Описание сайта:</label>
+            <textarea name="descr" id="content" cols="30" rows="10" placeholder="Здесь будет описание сайта"></textarea>
+            <span id="nine-input"></span>
+         </div>
+
+         <button class="but" type="submit">Опубликовать</button>
+      </form>
+   </main>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
